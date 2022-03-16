@@ -4,11 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Card Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/components/main-subtitle.css" />
+    <link rel="stylesheet" href="css/components/main-title.css" />
   </head>
   <body>
+    <section class="menu-wrapper">
+      <h1 class="main-title">Dota 2 Card's Game</h1>
+      <button>Sortear</button>
+    </section>
+    <section class="play-wrapper">
+      <div id="cards-player" class="container-play"></div>
+      <div id="selected-player"></div>
+      <form id="form-choice" class="play-choice">
+        <div>
+          <input type="radio" name="atribute" />
+          <label>Attack</label>
+        </div>
+        <div>
+          <input type="radio" name="atribute" />
+          <label>Defense</label>
+        </div>
+        <div>
+          <input type="radio" name="atribute" />
+          <label>Magic</label>
+        </div>
+        <button>Jogar!</button>
+      </form>
+      <div id="selected-machine"></div>
+      <div id="cards-machine" class="container-play"></div>
+    </section>
     <script src="js/cards.js"></script>
+    <script src="js/sortcards.js"></script>
+    <script src="js/gencard.js"></script>
+    <script src="js/selectcard.js"></script>
   </body>
 </html>
