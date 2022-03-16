@@ -6,7 +6,11 @@ function sortCards() {
   // if (checkSort(index))
   // else
 }
-function sortCards(index) {
+function checkSort(index) {
   // let checkPlayer = cards_player
   // let checkMachine = cards_
+}
+
+function randomFunc(max) {
+  return Math.floor(Math.random() * max)
 }
