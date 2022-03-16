@@ -1,0 +1,45 @@
+body {
+  background-color: #738fa7;
+}
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 3rem;
+}
+.play-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5rem;
+}
+.container-play {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  gap: 0.2rem;
+}
+.container-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  background-image: linear-gradient(#242038, #3c817a);
+  border: 1px solid #04724d;
+  gap: 0.5rem;
+}
+.img-card {
+  height: 120px;
+  width: 160px;
+  border: 1px solid #04724d;
+}
+.play-choice {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
