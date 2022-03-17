@@ -8,12 +8,12 @@ body {
   align-items: center;
   gap: 1rem;
   padding-top: 3rem;
+  margin-bottom: 3rem;
 }
 .play-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   width: 100%;
   gap: 5rem;
 }
@@ -21,8 +21,9 @@ body {
   display: flex;
   flex-direction: column;
   width: 15%;
-  gap: 0.2rem;
 }
+/* .wrapper-card {
+} */
 .container-card {
   display: flex;
   flex-direction: column;
@@ -31,15 +32,46 @@ body {
   padding: 5px 0;
   background-image: linear-gradient(#242038, #3c817a);
   border: 1px solid #04724d;
-  gap: 0.5rem;
+  gap: 1rem;
+  margin: 0.4rem;
 }
 .img-card {
   height: 120px;
   width: 160px;
   border: 1px solid #04724d;
 }
-.play-choice {
+.img-pile {
+  height: 270px;
+  width: 190px;
+  margin: 0.4rem;
+}
+.play-menu {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  align-items: center;
+  gap: 1rem;
+  width: 560px;
+}
+.score-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.score-container {
+  border: 2px solid #04724d;
+  box-sizing: border-box;
+  padding: 2px;
+  background-color: #242038;
+  width: 5.7rem;
+}
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.inputmatch {
+  text-align: center;
+  width: 4rem;
+  height: 2rem;
 }

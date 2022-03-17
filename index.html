@@ -21,32 +21,105 @@
   <body>
     <section class="menu-wrapper">
       <h1 class="main-title">Dota 2 Card's Game</h1>
-      <button>Sortear</button>
+      <div class="input-form">
+        <h2 id="menu-subtitle" class="main-subtitle">Quantas partidas?</h2>
+        <input
+          id="input-matches"
+          class="inputmatch main-subtitle"
+          type="number"
+        />
+      </div>
+      <button
+        id="button-start"
+        class="main-button main-subtitle"
+        onclick="startGame()"
+      >
+        Começar!
+      </button>
     </section>
     <section class="play-wrapper">
-      <div id="cards-player" class="container-play"></div>
-      <div id="selected-player"></div>
-      <form id="form-choice" class="play-choice">
-        <div>
-          <input type="radio" name="atribute" />
-          <label>Attack</label>
+      <div class="container-play">
+        <div class="score-wrapper">
+          <div class="score-container start-game" hidden>
+            <h2 class="main-subtitle -small">Vitorias</h2>
+            <h2 id="scorewinplayer" class="main-subtitle -small">0</h2>
+          </div>
+          <div class="score-container start-game" hidden>
+            <h2 class="main-subtitle -small">Empates</h2>
+            <h2 class="main-subtitle -small scoredraw">0</h2>
+          </div>
         </div>
-        <div>
-          <input type="radio" name="atribute" />
-          <label>Defense</label>
+        <div class="start-game" hidden>
+          <div id="cards-player" class="card-selected"></div>
+          <img
+            src="https://wallpaperaccess.com/full/1719373.jpg"
+            id="img-gencard"
+            class="img-pile"
+            onclick="playerDraw()"
+          />
         </div>
-        <div>
-          <input type="radio" name="atribute" />
-          <label>Magic</label>
+      </div>
+      <section class="play-menu">
+        <h1 id="announcer-title" class="main-title"></h1>
+        <h2 id="announcer-player" class="main-title -small"></h2>
+        <h2 id="announcer-machine" class="main-title -small"></h2>
+        <form class="img-click" hidden>
+          <div>
+            <input id="inputattack" type="radio" name="attribute" />
+            <label class="main-subtitle -small">Attack</label>
+          </div>
+          <div>
+            <input id="inputdefense" type="radio" name="attribute" />
+            <label class="main-subtitle -small">Defense</label>
+          </div>
+          <div>
+            <input id="inputmagic" type="radio" name="attribute" />
+            <label class="main-subtitle -small">Magic</label>
+          </div>
+        </form>
+        <button
+          id="button-play"
+          class="main-button main-subtitle img-click"
+          onclick="playGame()"
+          hidden
+        >
+          Jogar!
+        </button>
+        <button
+          id="next-hand"
+          class="main-button main-subtitle"
+          onclick="nextHand()"
+          hidden
+        >
+          Outra Mão
+        </button>
+      </section>
+      <div class="container-play">
+        <div class="score-wrapper">
+          <div class="score-container start-game" hidden>
+            <h2 class="main-subtitle -small">Vitorias</h2>
+            <h2 id="scorewinmachine" class="main-subtitle -small">0</h2>
+          </div>
+          <div class="score-container start-game" hidden>
+            <h2 class="main-subtitle -small">Empates</h2>
+            <h2 class="main-subtitle -small scoredraw">0</h2>
+          </div>
         </div>
-        <button>Jogar!</button>
-      </form>
-      <div id="selected-machine"></div>
-      <div id="cards-machine" class="container-play"></div>
+        <div id="machine" class="start-game" hidden>
+          <div id="cards-machine"></div>
+          <img
+            id="img-machinecard"
+            src="https://wallpaperaccess.com/full/1719373.jpg"
+            class="img-pile"
+          />
+        </div>
+      </div>
     </section>
     <script src="js/cards.js"></script>
     <script src="js/sortcards.js"></script>
-    <script src="js/gencard.js"></script>
+    <script src="js/drawcard.js"></script>
     <script src="js/selectcard.js"></script>
+    <script src="js/play.js"></script>
+    <script src="js/start.js"></script>
   </body>
 </html>
