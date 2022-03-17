@@ -4,3 +4,8 @@
   font-size: 2rem;
   color: #242038;
 }
+.main-title.-small {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #ecfeaa;
+}
